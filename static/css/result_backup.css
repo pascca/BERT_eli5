@@ -111,22 +111,22 @@ body {
 .tilesWrap li:nth-child(1):before {
 	background: #C9FFBF;
 background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
-background: linear-gradient(to right, #57bd84, #57bd84);
+background: linear-gradient(to right, #FFAFBD, #C9FFBF);
 }
 .tilesWrap li:nth-child(2):before {
 	background: #f2709c;
 background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
-background: linear-gradient(to right, #57bd84, #57bd84);
+background: linear-gradient(to right, #ff9472, #f2709c);
 }
 .tilesWrap li:nth-child(3):before {
 	background: #c21500;
 background: -webkit-linear-gradient(to right, #ffc500, #c21500);
-background: linear-gradient(to right, #57bd84, #57bd84);
+background: linear-gradient(to right, #ffc500, #c21500);
 }
 .tilesWrap li:nth-child(4):before {
 	background: #FC354C;
 background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
-background: linear-gradient(to right, #57bd84, #57bd84);
+background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
 
 button#return {

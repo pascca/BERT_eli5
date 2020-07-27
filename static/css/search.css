@@ -10,14 +10,16 @@
 	 --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
+
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'helvetica', serif;
     left: 0;
     line-height: 200px;
-    margin-top: -100px;
+    margin-top: -90px;
+    margin-left: 25px;
     position: absolute;
-    text-align: center;
-    top: 25%;
+    text-align: left;
+    top: 20px;
     width: 100%;
     color:white;
 }
@@ -71,6 +73,7 @@ h1 {
 	 font-weight: bold;
 	 background: var(--color-brand);
 	 border-radius: 0 var(--rad) var(--rad) 0;
+	 cursor: pointer;
 }
  input:not(:placeholder-shown) {
 	 border-radius: var(--rad) 0 0 var(--rad);
@@ -95,4 +98,8 @@ h1 {
 	 height: 100%;
 	 font-size: 15px;
 	 color: white;
+ }
+
+img {
+
  }
