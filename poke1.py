@@ -2,8 +2,12 @@
 from flask import Flask, request, render_template
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import praw
 
 model = SentenceTransformer('bert-base-nli-mean-tokens')
+r = praw.Reddit(client_id='cfBg3wRLP9kY4g',
+                client_secret='08gBhc1GPgXL64lis5Bn7tXIvsY',
+                user_agent='Tim')
 
 def loadQuestionsLinks():
     questions = []
@@ -39,6 +43,16 @@ def getRecommends(text1):
     #for a in len(rel_questions):
     return rel_questions, rel_links
 
+def getTopComment(links):
+    tops = []
+    for a in links:
+        url = a
+        submission = r.submission(url=a)
+        submission.comment_sort = "top"
+        comment = [comment.body for comment in submission.comments if hasattr(comment, "body")]
+        tops.append(comment[0])
+    return tops
+
 @app.route('/')
 def home():
     return render_template('search2.html')
@@ -54,7 +68,8 @@ def getQuestions():
 def result_site():
     text1 = request.args.get("q")
     results, links = getRecommends(text1)
-    return render_template("poketest.html", len=len(results), Pokemons=results, Links=links)
+    tops = getTopComment(links)
+    return render_template("poketest.html", len=len(results), Pokemons=results, Links=links, Tops=tops)
 
 # defining home page
 """
