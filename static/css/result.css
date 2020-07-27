@@ -41,6 +41,9 @@ body {
 	line-height: 18px;
 	color: #b7b7b7;
 	margin-top: 5px;
+	/* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 .tilesWrap li button {
 	background: transparent;
