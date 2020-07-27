@@ -46,11 +46,14 @@ def getRecommends(text1):
 def getTopComment(links):
     tops = []
     for a in links:
-        url = a
-        submission = r.submission(url=a)
-        submission.comment_sort = "top"
-        comment = [comment.body for comment in submission.comments if hasattr(comment, "body")]
-        tops.append(comment[0])
+        try:
+            url = a
+            submission = r.submission(url=a)
+            submission.comment_sort = "top"
+            comment = [comment.body for comment in submission.comments if hasattr(comment, "body")]
+            tops.append(comment[0])
+        except:
+            tops.append("LINK OUTDATED")
     return tops
 
 @app.route('/')
