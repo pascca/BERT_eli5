@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>search2</title>
+    <title>ELI5</title>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/search.css') }}">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -25,11 +25,11 @@ var text1 = $('#text1').val();
             });
 };
 </script>
-<h1>Explain Like I'm 5 Finder</h1>
+<img src="/static/img/easyexplain.png">
 <body>
 <form role="search"  method ="get" action = "/poketest">
   <label for="text1">Search for stuff</label>
-  <input id="text1" name="q" type="search" placeholder="Search..." autofocus required />
+  <input id="text1" name="q" type="search" placeholder="Ask..." autofocus required />
   <button type="submit" onclick="">Go</button>
 </form>
 <div class="show-data" >
