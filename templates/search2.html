@@ -6,32 +6,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/search.css') }}">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<script>
-function myFunction() {
-var text1 = $('#text1').val();
-  $.ajax({
-              url: "/result",
-              type: "POST",
-              data: {text1:text1}
-          }).done(function(response) {
-            var html= "<br><br><br><p> <b> RESULT : <b><p>";
-            response =response.result;
-                 $.each(response,function(key,val){
-                 console.log(val);
-                    html+="<p>"+val+"<p>"
-                });
-                html +="<br>";
-                $(".show-data").append(html);
-            });
-};
-</script>
+<script type="text/javascript">// <![CDATA[
+        function loading(){
+            $(".lds-ripple").show();
+        }
+// ]]></script>
 <img src="/static/img/easyexplain.png">
 <body>
 <form role="search"  method ="get" action = "/poketest">
   <label for="text1">Search for stuff</label>
   <input id="text1" name="q" type="search" placeholder="Ask..." autofocus required />
-  <button type="submit" onclick="">Go</button>
+  <button type="submit" onclick="loading();">Go</button>
 </form>
+<div class="lds-ripple"><div></div><div></div></div>
 <div class="show-data" >
     </div>
 </body>
