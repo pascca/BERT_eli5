@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TFIDF-Answers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/results.css') }}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<ul class="tilesWrap">
+    {%for i in range(0, 4)%}
+	<li>
+		<h2>{{i+1}}</h2>
+		<h3>{{Questions[i]}}</h3>
+		<p>
+			{{Tops[i]}}
+		</p>
+		<form action={{Links[i]}} target="_blank">
+		<button type="submit">Read more</button>
+		</form>
+	</li>
+    {%endfor%}
+	<div id="logo">
+	<a href="/">
+	<img src="/static/img/easyexplain_mini2.png">
+	</a>
+</div>
+</ul>
+
+</body>
+</html>
+

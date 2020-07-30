@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TFIDF-ELI5</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/home.css') }}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script type="text/javascript">// <![CDATA[
+        function loading(){
+            $(".lds-ripple").show();
+        }
+// ]]></script>
+<img src="/static/img/easyexplain.png">
+<body>
+<form role="search"  method ="get" action = "/results_tfidf">
+  <label for="text1">Search for stuff</label>
+  <input id="text1" name="q" type="search" placeholder="Ask..." autofocus required />
+  <button type="submit" onclick="loading();">Go</button>
+</form>
+<div class="lds-ripple"><div></div><div></div></div>
+<div class="show-data" >
+    </div>
+</body>
+</html>
