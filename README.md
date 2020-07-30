@@ -21,8 +21,8 @@ The code is optimized for Python 3.8.
 
 3) Install requirements.txt with: `pip3 install -r requirements.txt`
 
-4) Ask author of repository for encoded files and question-answer-pairs, namely `sentenceencodingsquestionsbig.npy` and `questionsandlinks.txt` -> Download and position the files on same hierarchy level as `SentenceBertSearch.py` and `TfidfSearch.py`
+4) Download `sentenceencodingsquestionsbig.npy`,`questionsandlinks.txt` and `explainlikeimfive_qalist.json` [here](https://drive.google.com/drive/folders/1HZ0Top-SVQc-FpwxIONPqvHD_gh7oR1d?usp=sharing) -> Position the files on the same hierarchy level as `SentenceBertSearch.py` and `TfidfSearch.py`
 
-5) Run `SentenceBertSearch.py`(Sentence-Bert version) or `TfidfSearch.py`(TFIDF-Baseline) and go to and `http://127.0.0.1:5001/`(Sentence-Bert version) or `http://127.0.0.1:5000/`(TFIDF-Baseline)
+5) Run `SentenceBertSearch.py`(Sentence-Bert version) or `TfidfSearch.py`(TFIDF-Baseline) and open `http://127.0.0.1:5001/`(Sentence-Bert version) or `http://127.0.0.1:5000/`(TFIDF-Baseline)
 
-6) Ask questions - get answers
+6) Ask questions about concepts and phenomena (e.g. 'Why do we feel love?') - get layman-friendly answers
