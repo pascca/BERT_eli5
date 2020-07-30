@@ -12,13 +12,17 @@ Example question 'What makes the earth rotate?" and results:
 
 # How to use
 
+The code is optimized for Python 3.8.
+
 1) Copy this repository.
 
-2) Install requirements.txt with: `pip3 install -r requirements.txt`
+2) Install torch version >= 1.2 fitting to your OS. This step can be problematic if you are using Windows and/or PyCharm.
+  -> For Windows/PyCharm, try to run this command: `pip install torch===1.4.0 torchvision===0.5.0 -f https://download.pytorch.org/whl/torch_stable.html`
 
-3) Ask author of repository for encoded files and question-answer-pairs, namely `sentenceencodingsquestionsbig.npy` and `questionsandlinks.txt` -> Download and position the files on same hierarchy level as `SentenceBertSearch.py` and `TfidfSearch.py`
+3) Install requirements.txt with: `pip3 install -r requirements.txt`
 
-4) Run `SentenceBertSearch.py`(Sentence-Bert version) or `TfidfSearch.py`(TFIDF-Baseline) and go to and `http://127.0.0.1:5001/`(Sentence-Bert version) or `http://127.0.0.1:5000/`(TFIDF-Baseline)
+4) Ask author of repository for encoded files and question-answer-pairs, namely `sentenceencodingsquestionsbig.npy` and `questionsandlinks.txt` -> Download and position the files on same hierarchy level as `SentenceBertSearch.py` and `TfidfSearch.py`
 
-5) Ask questions - get answers
+5) Run `SentenceBertSearch.py`(Sentence-Bert version) or `TfidfSearch.py`(TFIDF-Baseline) and go to and `http://127.0.0.1:5001/`(Sentence-Bert version) or `http://127.0.0.1:5000/`(TFIDF-Baseline)
 
+6) Ask questions - get answers
