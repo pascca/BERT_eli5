@@ -26,3 +26,11 @@ The code is optimized for Python 3.8.
 5) Run `SentenceBertSearch.py`(Sentence-Bert version) or `TfidfSearch.py`(TFIDF-Baseline) and open `http://127.0.0.1:5001/`(Sentence-Bert version) or `http://127.0.0.1:5000/`(TFIDF-Baseline)
 
 6) Ask questions about concepts and phenomena (e.g. 'Why do we feel love?') - get layman-friendly answers
+
+# Data
+
+The initial data-file `explainlikeimfive_qalist.json` was created with a script from Facebook's project [ELI5](https://github.com/facebookresearch/ELI5) by using following command:
+
+`python download_reddit_qalist.py -Q`
+
+This script downloads all posts between 2011 and 2018 in a specific json-format. This web-app only needs the questions and links. These were extracted with the usage of `LoadAndEncode.py` into `questionsandlinks.txt`. The same script was used to create the sentence-bert encodings of the questions `sentenceencodingsquestionsbig.npy` which are utlized in `SentenceBertSearch.py`.
