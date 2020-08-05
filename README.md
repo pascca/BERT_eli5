@@ -41,4 +41,4 @@ The paper is listed as [ELI5_SBERT_SEARCH.pdf](https://github.com/pascca/BERT_el
 
 # Website
 
-You can try out a live demo of the TF-IDF Version [here](www.ezexplain.com). There were problems with the website performance on 'pythonanywhere' when using SBERT to encode the query, but I hope to fix that problem soon.
+You can try out a live demo of the TF-IDF Version [here](https://www.ezexplain.com/). There were problems with the website performance on 'pythonanywhere' when using SBERT to encode the query, but I hope to fix that problem soon.
