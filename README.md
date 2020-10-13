@@ -35,10 +35,6 @@ The initial data-file `explainlikeimfive_qalist.json` was created with a script 
 
 This script downloads all posts between 2011 and 2018 in a specific json-format. This web-app only needs the questions and links. These were extracted with the usage of `LoadAndEncode.py` into `questionsandlinks.txt`. The same script was used to create the sentence-bert encodings of the questions `sentenceencodingsquestionsbig.npy` which are utlized in `SentenceBertSearch.py`.
 
-# Paper
-
-The paper is listed as [ELI5_SBERT_SEARCH.pdf](https://github.com/pascca/BERT_eli5/blob/master/ELI5_SBERT_SEARCH.pdf) and describes the ideas behind the system.
-
 # Website
 
 You can try out a live demo of the TF-IDF Version [here](https://www.ezexplain.com/). There were problems with the website performance on 'pythonanywhere' when using SBERT to encode the query, but I hope to fix that problem soon.
