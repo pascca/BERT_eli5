@@ -31,7 +31,7 @@ def readJsonQuestions():
             myfile.write(ques[a]+"\t"+urls[a]+"\n")
     return ques,urls
 
-#start server first bert-serving-start -model_dir C:\Users\d073873\PycharmProjects\MovieCompareTest\BERT\uncased_L-4_H-256_A-4 -num_worker=1
+#start server first bert-serving-start -model_dir LocationToYourBERTModel -num_worker=1
 def encodeAll(summaries):
     summaryArrays = bc.encode(summaries)
     with open('bertencodingsquestions.npy', 'wb') as f:
