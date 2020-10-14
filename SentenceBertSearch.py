@@ -8,9 +8,10 @@ from sklearn.metrics.pairwise import linear_kernel,cosine_similarity
 # Load Sentence-Bert Model (approx. 400 MB)
 model = SentenceTransformer('bert-base-nli-mean-tokens')
 # Reddit Login tokens
-r = praw.Reddit(client_id='cfBg3wRLP9kY4g',
-                client_secret='08gBhc1GPgXL64lis5Bn7tXIvsY',
-                user_agent='Tim')
+r = praw.Reddit(client_id='XXXX',
+                client_secret='XXX',
+                user_agent='XXX')
+# ADD YOUR API KEY
 
 #Load Questions and Links
 def loadQuestionsLinks():
