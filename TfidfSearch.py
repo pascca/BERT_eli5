@@ -6,9 +6,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel,cosine_similarity
 
 # Reddit Login tokens
-r = praw.Reddit(client_id='cfBg3wRLP9kY4g',
-                client_secret='08gBhc1GPgXL64lis5Bn7tXIvsY',
-                user_agent='Tim')
+r = praw.Reddit(client_id='XXX',
+                client_secret='XXX',
+                user_agent='XXX')
+# ADD YOUR API KEY
 
 #Load Questions and Links
 def loadQuestionsLinks():
