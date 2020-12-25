@@ -41,4 +41,4 @@ You can read the paper for a more detailed project description [here](https://gi
 
 # Website
 
-You can try out a live demo of the TF-IDF Version [here](https://www.ezexplain.com/). There were problems with the website performance on 'pythonanywhere' when using SBERT to encode the query, but I hope to fix that problem soon.
+You can try out a live demo of the TF-IDF Version [here](http://ozi.eu.pythonanywhere.com/). There were problems with the website performance on 'pythonanywhere' when using SBERT to encode the query, but I hope to fix that problem soon.
